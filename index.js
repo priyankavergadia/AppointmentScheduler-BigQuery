@@ -69,13 +69,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
 
 function addToBigQuery(agent, appointment_type) {
-    console.log("Date", agent.parameters.date);
-    console.log("Time", agent.parameters.time);
     const date_bq = agent.parameters.date.split('T')[0];
     const time_bq = agent.parameters.time.split('T')[1].split('-')[0];
-
-    console.log("date_bq", date_bq);
-    console.log("time_bq", time_bq);
     /**
     * TODO(developer): Uncomment the following lines before running the sample.
     */
