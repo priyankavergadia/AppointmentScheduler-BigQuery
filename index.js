@@ -19,7 +19,7 @@
 const functions = require('firebase-functions');
 const {google} = require('googleapis');
 const {WebhookClient} = require('dialogflow-fulfillment');
-const BIGQUERY = require('@google-cloud/bigquery');
+const { BigQuery } = require('@google-cloud/bigquery');
 
 
 // Enter your calendar ID below and service account JSON below
